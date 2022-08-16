@@ -22,10 +22,13 @@ function randomColorGen(random) {
   } else if (random === 6) {
     document.body.style.background = `linear-gradient(to right, #347fc4, #1f4c76)`;
     color.textContent = "linear-gradient(to right, #347fc4, #1f4c76)";
+  } else if (random === 7) {
+    document.body.style.background = `linear-gradient(to top, #2c355c,#4a5899)`;
+    color.textContent = "linear-gradient(to top, #2c355c, #4a5899)";
   }
 }
 
 colorBtn.addEventListener("click", function () {
-  let random = Math.trunc(Math.random() * 6) + 1;
+  let random = Math.trunc(Math.random() * 7) + 1;
   randomColorGen(random);
 });
